@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  laptop-php-cli:
+    container_name: laptop-php-cli
+    build:
+      context: ./php-cli
+    user: 1000:1000
+    volumes:
+      - ./../:/app
